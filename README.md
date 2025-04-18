@@ -24,7 +24,7 @@ Outra coisa é mostrar como me comunico também dentro do ambiente profissional.
 18:20 - Criei um topo e um footer para receber o componente
 18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia
 19:20 - Criei o service `vehicle.service.ts` e o model, organizei em diretórios para facili
-20:40 - Estou publicando uma versão, e com isso, consigo colocar um screenshot. Para isso, fiz um build com o comando `ng build --output-path docs --base-href https://herus02.github.io/vehicles-catalog/` <br>
+20:40 - Estou publicando uma versão e com isso, consigo colocar um screenshot no README.md. Para isso, fiz um build com o comando <br> `ng build --output-path docs --base-href https://herus02.github.io/vehicles-catalog/` <br>
 Isso possibilitou a publicação do 
-![Screenshot do projeto até aqui](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-1.png) <br>
-É possível visualizar o projeto neste link: ![Link do projeto](https://herus02.github.io/vehicles-catalog/)
+![Screenshot do projeto até aqui](https://herus02.github.io/vehicles-catalog/assets/img/sreenshot-1.png) <br>
+É possível visualizar o projeto neste link: [Link do projeto](https://herus02.github.io/vehicles-catalog/)
