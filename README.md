@@ -20,5 +20,6 @@ Outra coisa é mostrar como me comunico também dentro do ambiente profissional.
 
 17:13 - Adicionei bootstrap
 18:20 - Criei um topo e um footer para receber o componente
-18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia (aqui já dá pra ver a telat) [https://raw.githubusercontent.com/herus02/vehicles-catalog/refs/heads/main/public/screenshot-1.png]
+18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia:
+![Screenshot do projeto até aqui](https://raw.githubusercontent.com/herus02/vehicles-catalog/refs/heads/main/public/screenshot-1.png)
 18:23 - Criei o service  `vehicle.service.ts`
