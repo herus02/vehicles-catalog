@@ -16,10 +16,15 @@ Poderia ter feito usando algo como json-placeholder, mas quero mostrar a aplica�
 
 Criei o projeto usando o Angular 19, para mostrar o uso dos recursos: inject(), o novo Control Flow (condições no template) e signals()
 
-Outra coisa é mostrar como me comunico também dentro do ambiente profissional. Então neste momento, estou fazendo um _status report_ do que estou produzindo, assim como estou usando o README.md para documentar (em forma de ata) do que se trata o projeto. Acredito que a comunicação é algo iumportante dentro de uma equipe.
+Organizei os componentes em diretórios de `core` e `features`.
+
+Outra coisa é mostrar como me comunico também dentro do ambiente profissional. Então neste momento, estou fazendo um _status report_ do que estou produzindo, assim como estou usando o README.md para documentar (em forma de ata) do que se trata o projeto. Acredito que a comunicação é algo importante dentro de uma equipe.
 
 17:13 - Adicionei bootstrap <br>
 18:20 - Criei um topo e um footer para receber o componente
-18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia:<br>
-![Screenshot do projeto até aqui](https://raw.githubusercontent.com/herus02/vehicles-catalog/refs/heads/main/public/screenshot-1.png) <br>
-19:23 - Criei o service  `vehicle.service.ts` <br>
+18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia
+19:20 - Criei o service `vehicle.service.ts` e o model, organizei em diretórios para facili
+20:40 - Estou publicando uma versão, e com isso, consigo colocar um screenshot. Para isso, fiz um build com o comando `ng build --output-path docs --base-href https://herus02.github.io/vehicles-catalog/` <br>
+Isso possibilitou a publicação do 
+![Screenshot do projeto até aqui](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-1.png) <br>
+É possível visualizar o projeto neste link: ![Link do projeto](https://herus02.github.io/vehicles-catalog/)
