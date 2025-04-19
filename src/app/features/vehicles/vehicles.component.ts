@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { Vehicle } from '../../core/models/vehicle.model';
 import { VehicleService } from '../../core/services/vehicle.service';
 import { VehicleCardComponent } from "./components/vehicle-card/vehicle-card.component";
@@ -19,7 +19,8 @@ export class VehiclesComponent implements OnInit {
   currentPage = signal<number>(1);
   itemsPerPage = signal<number>(10);
 
-  constructor(private vehicleService: VehicleService) {}
+  private vehicleService = inject(VehicleService);
+  
   ngOnInit(): void {
     this.loadVehicles();
   }
