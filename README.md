@@ -52,5 +52,10 @@ Eu pretendia fazer a API em node.js se desse tempo, mas creio que ambos vão atr
 19/04 às 11:01 - Vou adicionar uma imagem randômica ao card do veículo e criar uma paginação e enviar o teste. Quem gostar gostou, quem não gostou... vai gostar. Vou adicionar a paginação ao componente, pois como ele não é reutilizado em outras features, vai ficar ali mesmo. <br>
 19/04 às 11:30 - Notei uma falha na minha organização à respeito do gerenciamento de _branches_, pois eu usei só a branch main, sem usar um gitflow para organizar a publicação. Mas como eu estou publicando o projeto desde o início, creio que não preciso levar isso em conta. Mas foi faltou esse cuidado para demonstração de gitflow. <br>
 ![Screenshot versão 4](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-4.png) <br>
+19/04 às 11:50 - Coloquei a imagem no card do veículo. Ficou visualmente bem atraente, creio que vai criar um impacto visual positivo, já que eu decidi não fazer os endpoints em node.js conforme o teste pedia como opcional.<br>
+![Screenshot versão 5](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-5.png) <br>
+19/04 às 13:30 - Adicionei a paginação com quantidade de itens totais e com a função de goTo page. Dou como finalizado o teste.<br>
+![Screenshot versão 6](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-6.png) <br>
+
 
 É possível visualizar o projeto neste link: [Link do projeto](https://herus02.github.io/vehicles-catalog/)
