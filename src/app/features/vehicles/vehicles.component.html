@@ -36,6 +36,13 @@
             </div>
             }
          </div>
+
+         <app-vehicle-pagination
+         [currentPage]="currentPage()"
+         [totalItems]="vehicles().length"
+         [itemsPerPage]="itemsPerPage()"
+         (pageChange)="onPageChange($event)"
+       ></app-vehicle-pagination>
         }
     }
     </div>

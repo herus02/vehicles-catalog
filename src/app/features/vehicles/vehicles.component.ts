@@ -2,10 +2,11 @@ import { Component, OnInit, signal } from '@angular/core';
 import { Vehicle } from '../../core/models/vehicle.model';
 import { VehicleService } from '../../core/services/vehicle.service';
 import { VehicleCardComponent } from "./components/vehicle-card/vehicle-card.component";
+import { VehiclePaginationComponent } from "./components/vehicle-pagination/vehicle-pagination.component";
 
 @Component({
   selector: 'app-vehicles',
-  imports: [VehicleCardComponent],
+  imports: [VehicleCardComponent, VehiclePaginationComponent],
   providers: [VehicleService],
   templateUrl: './vehicles.component.html',
   styleUrl: './vehicles.component.scss'
@@ -15,6 +16,8 @@ export class VehiclesComponent implements OnInit {
   displayedVehicles = signal<Vehicle[]>([]);
   isLoading = signal<boolean>(false);
   hasError = signal<boolean>(false);
+  currentPage = signal<number>(1);
+  itemsPerPage = signal<number>(10);
 
   constructor(private vehicleService: VehicleService) {}
   ngOnInit(): void {
@@ -28,8 +31,8 @@ export class VehiclesComponent implements OnInit {
     this.vehicleService.getAll().subscribe({
       next: (data: Vehicle[]) => {
         this.vehicles.set(data);
+        this.updateDisplayedVehicles();
         this.isLoading.set(false);
-        this.displayedVehicles.set(this.vehicles());
       },
       error: (error: unknown) => {
         console.error('Erro ao carregar veículos:', error);
@@ -37,6 +40,17 @@ export class VehiclesComponent implements OnInit {
         this.isLoading.set(false);
       }
     });
+  }
+
+  onPageChange(page: number): void {
+    this.currentPage.set(page);
+    this.updateDisplayedVehicles();
+  }
+
+  private updateDisplayedVehicles(): void {
+    const start = (this.currentPage() - 1) * this.itemsPerPage();
+    const end = start + this.itemsPerPage();
+    this.displayedVehicles.set(this.vehicles().slice(start, end));
   }
 
   retryLoading(): void {
