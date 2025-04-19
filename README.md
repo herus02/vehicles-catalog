@@ -28,16 +28,25 @@ Organizei os componentes em diretórios de `core` e `features`.
 
 A criação desse README.md como relatório documental para demonstrar como foi o processo de criação.É um  _status report_ do que estou produzindo, assim como para comunicar  do que se trata o projeto. Acredito que a comunicação é algo importante dentro de uma equipe.
 
-17:13 - Adicionei bootstrap e adicionei o loading<br>
-18:20 - Criei um topo e um footer para receber o componente
-18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia
-19:20 - Criei o service `vehicle.service.ts` e o model, organizei em diretórios para demonstrar uma arquitetura que eu acredito estar
-20:40 - Estou publicando uma versão e com isso, consigo colocar um screenshot no README.md. Para isso, fiz um build com o comando <br> `ng build --output-path docs --base-href https://herus02.github.io/vehicles-catalog/` <br>
+18/04 às 17:13 - Adicionei bootstrap e adicionei o loading<br>
+18/04 às 18:20 - Criei um topo e um footer para receber o componente
+18/04 às 18:21 - Criei o component `vehicle.component.ts`, adicionei um componente com uma lista vazia<br>
+18/04 às 19:20 - Criei o service `vehicle.service.ts` e o model, organizei em diretórios para demonstrar uma arquitetura que eu acredito estar pronta pra evolução do projeto<br>
+O service bate num endpoint que eu criei no serviço MockAPI, esse é o endpoint: https://64a46b29c3b509573b5780f1.mockapi.io/pub/v1/veiculos <br>
+Optei pelo seu uso pois eu posso gerar os dados com um clique
+
+18/04 às 20:40 - Estou publicando uma versão e com isso, consigo colocar um screenshot no README.md. Para isso, fiz um build com o comando <br> `ng build --output-path docs --base-href https://herus02.github.io/vehicles-catalog/` <br>
+
 Isso possibilitou a publicação do screenshot: 
 ![Screenshot versão 1](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-1.png) <br>
 
-20:50 - Criei um loading e o carregamento no `vehicles.component.ts` e bloco onde vou importar o `vehicle-card.component.ts` que irá conter os dados do . Gero novamente um build e movo os arquivos para o diretório `/docs/`. A geração cria um diretório chamado browser e isso atrapalha a pipeline do Github Pages.
+18/04 às 20:50 - Criei um loading e o carregamento no `vehicles.component.ts` e bloco onde vou importar o `vehicle-card.component.ts` que irá conter os dados do . Gero novamente um build e movo os arquivos para o diretório `/docs/`. A geração cria um diretório chamado browser e isso atrapalha a pipeline do Github Pages.<br>
 Então quando eu crio um build, em favor da apresentação do meu README.md, eu preciso copiar os screenshots também.<br>
 ![Screenshot versão 2](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-2.png) <br>
+
+19/04 às 09:41 - Criei o component que vai listar os dados do carro/veículo.
+<br> Estou tentando utilizar um serviço chamado Unsplash para colocar uma imagem randômica de carro mas acredito que vai me dar mais trabalho, vou usar um link que já foi muito popular, que coloca uma imagem randômica, mas os parâmetros estão depreciados, agora o serviço demanda um acesso com token e uma chamada a uma API. Vamos ver.<br>
+Eu pretendia fazer a API em node.js se desse tempo, mas creio que ambos vão atrasar a entrega se eu tentar entregar hoje
+
 
 É possível visualizar o projeto neste link: [Link do projeto](https://herus02.github.io/vehicles-catalog/)
