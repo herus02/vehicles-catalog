@@ -30,8 +30,12 @@
           </div>
         } @else {
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            veículo vai aqui
-          </div>
+            @for (vehicle of displayedVehicles(); track vehicle.id) {
+            <div class="col">
+                <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
+            </div>
+            }
+         </div>
         }
     }
     </div>

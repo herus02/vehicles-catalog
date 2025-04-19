@@ -1,10 +1,11 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { Vehicle } from '../../core/models/vehicle.model';
 import { VehicleService } from '../../core/services/vehicle.service';
+import { VehicleCardComponent } from "./components/vehicle-card/vehicle-card.component";
 
 @Component({
   selector: 'app-vehicles',
-  imports: [],
+  imports: [VehicleCardComponent],
   providers: [VehicleService],
   templateUrl: './vehicles.component.html',
   styleUrl: './vehicles.component.scss'
@@ -28,6 +29,7 @@ export class VehiclesComponent implements OnInit {
       next: (data: Vehicle[]) => {
         this.vehicles.set(data);
         this.isLoading.set(false);
+        this.displayedVehicles.set(this.vehicles());
       },
       error: (error: unknown) => {
         console.error('Erro ao carregar veículos:', error);
@@ -35,5 +37,9 @@ export class VehiclesComponent implements OnInit {
         this.isLoading.set(false);
       }
     });
+  }
+
+  retryLoading(): void {
+    this.loadVehicles();
   }
 }
