@@ -46,7 +46,8 @@ Então quando eu crio um build, em favor da apresentação do meu README.md, eu 
 
 19/04 às 09:41 - Criei o component que vai listar os dados do carro/veículo.
 <br> Estou tentando utilizar um serviço chamado Unsplash para colocar uma imagem randômica de carro mas acredito que vai me dar mais trabalho, vou usar um link que já foi muito popular, que coloca uma imagem randômica, mas os parâmetros estão depreciados, agora o serviço demanda um acesso com token e uma chamada a uma API. Vamos ver.<br>
-Eu pretendia fazer a API em node.js se desse tempo, mas creio que ambos vão atrasar a entrega se eu tentar entregar hoje
-
+Eu pretendia fazer a API em node.js se desse tempo, mas creio que ambos vão atrasar a entrega se eu tentar entregar hoje<br>
+19/04 - 10:46 - Adicionei o vehicle-component na listagem (que usa RxJS e signals() para setar a listagem) e usando o novo Control Flow, fiz algumas condições para tratar erros, loading e retorno vazio (sem dados da API).<br>
+![Screenshot versão 3](https://herus02.github.io/vehicles-catalog/assets/img/screenshot-3.png) <br>
 
 É possível visualizar o projeto neste link: [Link do projeto](https://herus02.github.io/vehicles-catalog/)
